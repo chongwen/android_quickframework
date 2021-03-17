@@ -13,9 +13,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTabHost;
 
 
-import static com.example.tab.DataGenerator.mTabRes;
-import static com.example.tab.DataGenerator.mTabTitle;
-
 public class FragmentTabHostActivity extends AppCompatActivity implements TabHost.OnTabChangeListener {
     private Fragment[] mFragments;
     private FragmentTabHost mTabHost;
@@ -24,7 +21,7 @@ public class FragmentTabHostActivity extends AppCompatActivity implements TabHos
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_tab_host_ac_layout);
-        mFragments = DataGenerator.getFragments("FragmentTabHost Tab");
+        mFragments = TabGenerator.getFragments("FragmentTabHost Tab");
         initView();
 
     }
@@ -41,7 +38,7 @@ public class FragmentTabHostActivity extends AppCompatActivity implements TabHos
         //添加Tab
         for (int i = 0; i < 4; i++) {
             //生成TabSpec
-            TabHost.TabSpec tabSpec = mTabHost.newTabSpec(mTabTitle[i]).setIndicator(DataGenerator.getTabView(this, i));
+            TabHost.TabSpec tabSpec = mTabHost.newTabSpec(TabGenerator.mTabTitle[i]).setIndicator(TabGenerator.getTabView(this, i));
             // 添加Tab 到TabHost，并绑定Fragment
             Bundle bundle = new Bundle();
             bundle.putString("from", "FragmentTabHost Tab");
@@ -72,10 +69,10 @@ public class FragmentTabHostActivity extends AppCompatActivity implements TabHos
             ImageView tabIcon = (ImageView) view.findViewById(R.id.tab_content_image);
             TextView tabText = (TextView) view.findViewById(R.id.tab_content_text);
             if (i == mTabHost.getCurrentTab()) {
-                tabIcon.setImageResource(DataGenerator.mTabResPressed[i]);
+                tabIcon.setImageResource(TabGenerator.mTabResPressed[i]);
                 tabText.setTextColor(getResources().getColor(android.R.color.black));
             } else {
-                tabIcon.setImageResource(mTabRes[i]);
+                tabIcon.setImageResource(TabGenerator.mTabRes[i]);
                 tabText.setTextColor(getResources().getColor(android.R.color.darker_gray));
             }
         }
