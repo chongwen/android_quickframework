@@ -1,4 +1,4 @@
-package com.example.quickapplication;
+package com.example.tab;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,16 +10,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
-/**
- * Created by zhouwei on 17/4/23.
- */
+public class AttentionFragment extends Fragment {
 
-public class DiscoveryFragment extends Fragment {
 
     private String mFrom;
 
-    static DiscoveryFragment newInstance(String from) {
-        DiscoveryFragment fragment = new DiscoveryFragment();
+    static AttentionFragment newInstance(String from) {
+        AttentionFragment fragment = new AttentionFragment();
         Bundle bundle = new Bundle();
         bundle.putString("from", from);
         fragment.setArguments(bundle);
@@ -34,7 +31,6 @@ public class DiscoveryFragment extends Fragment {
         }
     }
 
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,7 +38,7 @@ public class DiscoveryFragment extends Fragment {
         TextView textView = (TextView) view.findViewById(R.id.title_from);
         TextView content = (TextView) view.findViewById(R.id.fragment_content);
         textView.setText(mFrom);
-        content.setText("DiscoveryFragment");
+        content.setText("AttentionFragment");
         return view;
     }
 }

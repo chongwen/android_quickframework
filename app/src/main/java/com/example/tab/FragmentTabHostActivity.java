@@ -1,4 +1,4 @@
-package com.example.quickapplication;
+package com.example.tab;
 
 import android.os.Bundle;
 import android.view.View;
@@ -12,13 +12,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTabHost;
 
-import static com.example.quickapplication.DataGenerator.mTabRes;
-import static com.example.quickapplication.DataGenerator.mTabTitle;
 
-
-/**
- * Created by zhouwei on 17/4/23.
- */
+import static com.example.tab.DataGenerator.mTabRes;
+import static com.example.tab.DataGenerator.mTabTitle;
 
 public class FragmentTabHostActivity extends AppCompatActivity implements TabHost.OnTabChangeListener {
     private Fragment[] mFragments;

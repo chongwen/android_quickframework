@@ -1,4 +1,4 @@
-package com.example.quickapplication;
+package com.example.tab;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,10 +8,6 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-
-/**
- * Created by zhouwei on 17/4/23.
- */
 
 public class DataGenerator {
 

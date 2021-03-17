@@ -1,4 +1,4 @@
-package com.example.quickapplication;
+package com.example.tab;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,15 +10,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
-/**
- * Created by zhouwei on 17/4/23.
- */
+public class ProfileFragment extends Fragment {
 
-public class HomeFragment extends Fragment {
+
     private String mFrom;
 
-    static HomeFragment newInstance(String from) {
-        HomeFragment fragment = new HomeFragment();
+    static ProfileFragment newInstance(String from) {
+        ProfileFragment fragment = new ProfileFragment();
         Bundle bundle = new Bundle();
         bundle.putString("from", from);
         fragment.setArguments(bundle);
@@ -40,7 +38,7 @@ public class HomeFragment extends Fragment {
         TextView textView = (TextView) view.findViewById(R.id.title_from);
         TextView content = (TextView) view.findViewById(R.id.fragment_content);
         textView.setText(mFrom);
-        content.setText("Homefragment");
+        content.setText("ProfileFragment");
         return view;
     }
 }
