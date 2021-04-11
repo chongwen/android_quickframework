@@ -8,10 +8,10 @@ import android.widget.ProgressBar;
 /**
  * 自定义WebChromeClient
  */
-public class CustomWebChromeClient extends WebChromeClient {
+public class ZcwWebChromeClient extends WebChromeClient {
     private ProgressBar mProgressbar;
 
-    public CustomWebChromeClient(ProgressBar progressBar) {
+    public ZcwWebChromeClient(ProgressBar progressBar) {
         mProgressbar = progressBar;
     }
 

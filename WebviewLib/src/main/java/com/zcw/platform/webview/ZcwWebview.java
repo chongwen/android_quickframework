@@ -13,23 +13,23 @@ import com.zcw.platform.R;
 /**
  * 自定义Webview
  */
-public class CustomWebview extends WebView {
+public class ZcwWebview extends WebView {
     private Context mContex;
     private ProgressBar webviewProgressbar;
 
-    public CustomWebview(Context context) {
+    public ZcwWebview(Context context) {
         super(context);
         this.mContex = context;
         init();
     }
 
-    public CustomWebview(Context context, AttributeSet attrs) {
+    public ZcwWebview(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.mContex = context;
         init();
     }
 
-    public CustomWebview(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ZcwWebview(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.mContex = context;
         init();
@@ -52,7 +52,7 @@ public class CustomWebview extends WebView {
         webSettings.setJavaScriptEnabled(true); //启用JavaScript
 
         // 自定义Client
-        setWebViewClient(new CustomWebViewClient());
-        setWebChromeClient(new CustomWebChromeClient(webviewProgressbar));
+        setWebViewClient(new ZcwWebViewClient());
+        setWebChromeClient(new ZcwWebChromeClient(webviewProgressbar));
     }
 }
