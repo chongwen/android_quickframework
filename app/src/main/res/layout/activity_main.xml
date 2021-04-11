@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <com.zcw.platform.webview.ZcwWebview
-        android:id="@+id/edxWebview"
+        android:id="@+id/zcwWebview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>
