@@ -1,4 +1,4 @@
-package com.edaixi.platform.widget.webview;
+package com.zcw.platform.webview;
 
 import android.webkit.WebView;
 import android.webkit.WebViewClient;

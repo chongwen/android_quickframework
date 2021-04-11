@@ -1,4 +1,4 @@
-package com.edaixi.platform.widget.webview;
+package com.zcw.platform.webview;
 
 import android.content.Context;
 import android.os.Build;
@@ -7,7 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
 
-import com.edaixi.platform.R;
+import com.zcw.platform.R;
 
 
 /**

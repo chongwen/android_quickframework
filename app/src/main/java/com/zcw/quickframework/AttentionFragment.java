@@ -1,4 +1,4 @@
-package com.example.tab;
+package com.zcw.quickframework;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
