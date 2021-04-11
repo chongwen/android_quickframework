@@ -12,7 +12,7 @@ ext["signing.secretKeyRingFile"] = ''
 ext["ossrhUsername"] = ''
 ext["ossrhPassword"] = ''
 
-File secretPropsFile = project.rootProject.file('gradle.properties')
+File secretPropsFile = project.rootProject.file('local.properties')
 if (secretPropsFile.exists()) {
     println "Found secret props file, loading props"
     Properties p = new Properties()
@@ -39,9 +39,9 @@ publishing {
             // Self-explanatory metadata for the most part
             pom {
                 name = PUBLISH_ARTIFACT_ID
-                description = '你的项目描述'
+                description = 'zcw自定义webview'
                 // If your project has a dedicated site, use its URL here
-                url = 'https://github.com/chongwen/android_tab'
+                url = 'https://github.com/chongwen/android_quickframework'
                 licenses {
                     license {
                         //协议类型，一般默认Apache License2.0的话不用改：
@@ -59,10 +59,10 @@ publishing {
                 // Version control info, if you're using GitHub, follow the format as seen here
                 scm {
                     //修改成你的Git地址：
-                    connection = 'scm:git:https://github.com/chongwen/android_tab.git'
-                    developerConnection = 'scm:git:https://github.com/chongwen/android_tab.git'
+                    connection = 'scm:git:https://github.com/chongwen/android_quickframework.git'
+                    developerConnection = 'scm:git:https://github.com/chongwen/android_quickframework.git'
                     //分支地址：
-                    url = 'https://github.com/chongwen/android_tab/tree/master'
+                    url = 'https://github.com/chongwen/android_quickframework/tree/master'
                 }
                 // A slightly hacky fix so that your POM will include any transitive dependencies
                 // that your library builds upon
