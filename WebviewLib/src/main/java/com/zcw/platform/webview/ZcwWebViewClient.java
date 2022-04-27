@@ -12,6 +12,8 @@ public class ZcwWebViewClient extends WebViewClient {
      */
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        return false;
+//        return false;
+        view.loadUrl(url);
+        return true;
     }
 }

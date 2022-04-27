@@ -5,15 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnWebview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="打开Webview"/>
-    <!--
     <com.zcw.platform.webview.ZcwWebView
         android:id="@+id/zcwWebview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-        -->
 </LinearLayout>

@@ -13,23 +13,23 @@ import com.zcw.platform.R;
 /**
  * 自定义Webview
  */
-public class ZcwWebview extends WebView {
+public class ZcwWebView extends WebView {
     private Context mContex;
     private ProgressBar webviewProgressbar;
 
-    public ZcwWebview(Context context) {
+    public ZcwWebView(Context context) {
         super(context);
         this.mContex = context;
         init();
     }
 
-    public ZcwWebview(Context context, AttributeSet attrs) {
+    public ZcwWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.mContex = context;
         init();
     }
 
-    public ZcwWebview(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ZcwWebView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.mContex = context;
         init();
@@ -39,7 +39,7 @@ public class ZcwWebview extends WebView {
     private void init() {
         // ProgressBar
         webviewProgressbar = new ProgressBar(mContex, null, android.R.attr.progressBarStyleHorizontal);
-        webviewProgressbar.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, 12, 0, 0));
+        webviewProgressbar.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, 10, 0, 0));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             webviewProgressbar.setProgressDrawable(getResources().getDrawable(R.drawable.progress_horizontal_holo_light, mContex.getTheme()));
         } else {
