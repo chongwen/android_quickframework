@@ -22,7 +22,7 @@ public class WebviewActivity extends AppCompatActivity {
 
         setContentView(R.layout.webview);
 
-        WebView webview = findViewById(R.id.syswebview);
+        ZcwWebView webview = findViewById(R.id.syswebview);
 //        webview.setWebViewClient(new WebViewClient() {
 //            @Override
 //            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -31,6 +31,6 @@ public class WebviewActivity extends AppCompatActivity {
 //            }
 //        });
 
-        webview.loadUrl("https://www.163.com");
+        webview.loadUrl("file:///android_asset/zcw.html");
     }
 }
