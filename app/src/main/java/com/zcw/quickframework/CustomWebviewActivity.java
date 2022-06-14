@@ -1,6 +1,8 @@
 package com.zcw.quickframework;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,5 +21,15 @@ public class CustomWebviewActivity extends AppCompatActivity {
 
         ZcwWebView webview = findViewById(R.id.zcwWebview);
         webview.loadUrl("https://www.163.com");
+
+        Button btn = findViewById(R.id.reloadBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                webview.loadUrl("https://www.baidu.com");
+//                webview.reload();
+            }
+        });
     }
 }

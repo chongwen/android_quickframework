@@ -15,14 +15,15 @@ import com.zcw.platform.webview.ZcwWebView;
  */
 public class WebviewActivity extends AppCompatActivity {
     private static final String TAG = WebviewActivity.class.getSimpleName();
-
+    WebView webview;
+    Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.webview);
 
-        ZcwWebView webview = findViewById(R.id.syswebview);
+        WebView webview = findViewById(R.id.syswebview);
 //        webview.setWebViewClient(new WebViewClient() {
 //            @Override
 //            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
@@ -31,6 +32,16 @@ public class WebviewActivity extends AppCompatActivity {
 //            }
 //        });
 
-        webview.loadUrl("file:///android_asset/zcw.html");
+        webview.loadUrl("https://www.qq.com");
+
+        btn = findViewById(R.id.reloadBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                webview.loadUrl("https://www.163.com");
+//                webview.reload();
+            }
+        });
     }
 }

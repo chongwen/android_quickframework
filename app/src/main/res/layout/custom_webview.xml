@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/reloadBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载百度" />
+
     <com.zcw.platform.webview.ZcwWebView
         android:id="@+id/zcwWebview"
         android:layout_width="match_parent"

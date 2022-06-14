@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(getApplicationContext(), WebviewActivity.class);
+                intent.setClass(getApplicationContext(), CustomWebviewActivity.class);
                 startActivity(intent);
             }
         });
