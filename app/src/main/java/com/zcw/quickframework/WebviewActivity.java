@@ -2,9 +2,11 @@ package com.zcw.quickframework;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
