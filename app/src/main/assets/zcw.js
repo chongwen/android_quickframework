@@ -17,3 +17,9 @@ function printU(title) {
 function jstoast(title) {
     alert(title);
 }
+
+function getUserAgent() {
+    let u = navigator.userAgent;
+    console.log(u);
+    alert(u);
+}

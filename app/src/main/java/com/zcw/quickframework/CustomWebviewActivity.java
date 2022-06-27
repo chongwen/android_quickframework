@@ -12,6 +12,7 @@ import com.zcw.platform.webview.ZcwWebView;
  * Created by KC on 4/11/21
  */
 public class CustomWebviewActivity extends AppCompatActivity {
+    private static final String ASSET_SCHEME = "file:///android_asset/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,7 @@ public class CustomWebviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                webview.loadUrl("https://www.baidu.com");
+                webview.loadUrl(ASSET_SCHEME+"zcw.html");
 //                webview.reload();
             }
         });
